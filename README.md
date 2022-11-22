@@ -12,15 +12,15 @@
 ##### Installing
 
 
-###### How to use it
+##### How to use it
 
 
-###### Format of Command input
+##### Format of Command input
 
 
-###### Arguments
+##### Arguments
 
 
-###### Available Commands and what they do
+##### Available Commands and what they do
 
 
