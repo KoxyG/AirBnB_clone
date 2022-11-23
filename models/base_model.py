@@ -16,4 +16,16 @@ class BaseModel:
 
     def __str__(self):
         """defines a format for the string representation of the class"""
-        return "[{}] ({}) {}".\format(type(self).
+        return "[{}] ({}) {}".\format(type(self).__name__, self.id, self.__dict__)
+
+
+    def save(self):
+       """updates the public instance attribute with the current datetime"""
+       self.updated_at = datetime.now()
+
+    def to_dict(self):
+       """returns a dictionary containing all keys/values of the instance"""
+       my_dict = self.__dict__.copy()
+       my_dict["__class__"] = type(self).__name__
+
+       return my_dict 
