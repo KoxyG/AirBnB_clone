@@ -37,5 +37,30 @@ class FileStorage:
                     for k, v in obj_dict.items()}
             FileStorage.__object = obj_dict
 
+    def classes(self):
+        """returns a dictionary of valid classes and their references"""
+        from models.base_model import BaseModel
+        from models.user import User
+        
+        classes = {"BaseModel": BaseModel,
+                    "User": User,
+                    }
+        return classes
+
+    def attributes(self):
+        """returns a valid attribute and their types for classname"""
+        attributes = {"BaseModel":
+                               {"id": str,
+                                "created_at": datetime.datetime,
+                                "updated_at": datetime.datetime},
+                    "User": 
+                            {"email": str,
+                             "password": str,
+                             "first_name": str,
+                             "last_name": str},
+                    }
+
+
+
 
 
