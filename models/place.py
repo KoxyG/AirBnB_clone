@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+"""This module creates a Place class"""
 
 from models.base_model import BaseModel
 
+
 class Place(BaseModel):
-    """This is a class module that manage places"
+    """Class for managing place objects"""
 
     city_id = ""
     user_id = ""
