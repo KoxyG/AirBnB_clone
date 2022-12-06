@@ -1,0 +1,58 @@
+.places {
+    display: block;
+    text-align: center;
+
+}
+
+.sub_article {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    padding: 10px;
+    margin: 20px;
+}
+
+.sub_article article {
+    border: #FF5A5F solid 1px;
+}
+
+.main_article {
+    display: inline-block;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 16px;
+
+}
+
+
+h1 {
+    float: left;
+    width: 95%;
+    font-size: 30px;
+    text-align: left;
+    display: block;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+article {
+    display: inline-block;
+    width: 390px;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+article h2 {
+    font-size: 16px;
+    padding: 0px;
+    margin: auto;
+}
+
+.suite {
+    border-left: #FF5A5F solid 1px;
+    border-right: #FF5A5F solid 1px;
+}
